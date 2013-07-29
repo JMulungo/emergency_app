@@ -1,0 +1,29 @@
+<h1>Listing categorizes</h1>
+
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Type</th>
+    <th>Description</th>
+    <th>Date</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @categorizes.each do |categorize| %>
+  <tr>
+    <td><%= categorize.location %></td>
+    <td><%= categorize.type %></td>
+    <td><%= categorize.description %></td>
+    <td><%= categorize.date %></td>
+    <td><%= link_to 'Show', categorize %></td>
+    <td><%= link_to 'Edit', edit_categorize_path(categorize) %></td>
+    <td><%= link_to 'Destroy', categorize, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Categorize', new_categorize_path %>

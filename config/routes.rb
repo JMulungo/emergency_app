@@ -1,4 +1,13 @@
 EmergencyApp::Application.routes.draw do
+  resources :types
+
+
+  resources :locations
+
+
+  resources :categorizes
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

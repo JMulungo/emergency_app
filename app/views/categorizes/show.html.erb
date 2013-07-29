@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Location:</b>
+  <%= @categorize.location %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @categorize.type %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @categorize.description %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @categorize.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_categorize_path(@categorize) %> |
+<%= link_to 'Back', categorizes_path %>
